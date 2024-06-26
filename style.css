@@ -1,0 +1,96 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #ff9a9e, #fad0c4, #fad0c4, #fad0c4, #ffdde1, #fcb69f, #fcb69f);
+    font-family: 'Cute Font', cursive;
+
+}
+
+h1{
+    text-align: center;
+    margin-top: 1em;
+    font-size: 4em;
+}
+
+#cronometro{
+    text-align: center;
+    font-size: 10em;
+    width: 5em;
+    border: none;
+    border-radius: 2em;
+    background: none;
+}
+
+.conteiner{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.input{
+    display: flex;
+}
+
+.label{
+    display: flex;
+    flex-direction: column;
+}
+
+#horas{
+    width: 5em;
+    margin-right: 3em;
+    border-radius: 2em;
+    text-align: center;
+    border: none;
+    background: none;
+}
+
+#minutos{
+    width: 6em;
+    margin-right: 3em;
+    border-radius: 2em;
+    text-align: center;
+    border: none;
+    background: none;
+}
+
+#segundos{
+    width: 7em;
+    border-radius: 2em;
+    text-align: center;
+    border: none;
+    background: none;
+}
+
+.input{
+    font-size: 2em;
+}
+
+ button {
+    margin: 5px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: #ff9a9e;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    
+}
+
+.botao{
+    display: flex;
+}
+
+#reset{
+    width: 11em
+}
