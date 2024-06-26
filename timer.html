@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8" />
+<title>Temporizador</title>
+<link href="https://fonts.googleapis.com/css2?family=Cute+Font&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+<link rel="shortcut icon" href="stopwatch-solid.svg" type="image/x-icon">
+<audio id="alertSound">
+    <source src="sofia-oficial.mp3" type="audio/mpeg">
+    Seu navegador não suporta o elemento de áudio.
+</audio>
+</head>
+<body>
+<div class="conteiner" id="conteiner">
+    <h1><i class="fa-solid fa-cross"></i> Vai estudar Sofia <i class="fa fa-heart" aria-hidden="true"></i>
+    </h1>
+    <input type="text" id="cronometro" value="00:00:00" readonly/>
+    <br/>
+    <div class="input">
+        <div class="label">
+        <label for="horas">Horas:</label>
+        <input type="number" id="horas" placeholder="Horas" min="0">
+    </div>
+    <div class="label">
+        <label for="minutos">Minutos:</label>
+        <input type="number" id="minutos" placeholder="Minutos" min="0">
+    </div>
+    <div class="label">
+        <label for="segundos">Segundos:</label>
+        <input type="number" id="segundos" placeholder="Segundos" min="0">
+    </div>
+    </div>
+
+    <br />
+    <div class="botao">
+        <button onclick="timer()"><i class="fa-solid fa-play"></i></button>
+        <button onclick="pause()"><i class="fa-solid fa-circle-stop"></i></button>
+        <button onclick="voltar()"><i class="fa-solid fa-backward"></i></button>
+    </div>
+
+    <button id="reset" onclick="reset()"><i class="fa-solid fa-arrows-rotate"></i> resetar</button>
+    
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
